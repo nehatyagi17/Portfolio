@@ -47,7 +47,7 @@ const ContactFooter = () => {
                 <div className="p-3 bg-white/5 rounded-full border border-white/10 group-hover:border-neonPrimary group-hover:shadow-[0_0_15px_rgba(0,240,255,0.3)] transition-all">
                   <Terminal size={20} />
                 </div>
-                <span className="font-mono text-sm">+91-8979168285</span>
+                <span className="font-mono text-sm">+91-9999999999</span>
               </a>
             </div>
 
