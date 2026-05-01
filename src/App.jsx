@@ -4,6 +4,7 @@ import AboutEducation from './components/AboutEducation';
 import SkillsCloud from './components/SkillsCloud';
 import ProjectGallery from './components/ProjectGallery';
 import ExperienceHackathons from './components/ExperienceHackathons';
+import WeeklyLearning from './components/WeeklyLearning';
 import MultimediaShowcase from './components/MultimediaShowcase';
 import ContactFooter from './components/ContactFooter';
 
@@ -32,6 +33,7 @@ function App() {
         <AboutEducation />
         <SkillsCloud />
         <ProjectGallery />
+        <WeeklyLearning />
         <ExperienceHackathons />
         <MultimediaShowcase />
       </main>
