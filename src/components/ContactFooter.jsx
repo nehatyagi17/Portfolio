@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Terminal, Send } from 'lucide-react';
+import { Mail, Terminal, Send, Lock } from 'lucide-react';
+import AdminUploadModal from './AdminUploadModal';
 
 const GithubIcon = ({ size }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -17,6 +18,7 @@ const LinkedinIcon = ({ size }) => (
 );
 
 const ContactFooter = () => {
+  const [isAdminOpen, setIsAdminOpen] = React.useState(false);
   return (
     <footer id="contact" className="relative pt-24 pb-8 border-t border-white/10 bg-black/80">
       <div className="container mx-auto px-6">
@@ -64,10 +66,19 @@ const ContactFooter = () => {
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between text-gray-500 font-mono text-xs">
           <p>© {new Date().getFullYear()} Neha Tyagi. All systems online.</p>
-          <div className="flex gap-4 mt-4 md:mt-0">
+          <div className="flex items-center gap-6 mt-4 md:mt-0">
             <span className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> Status: Optimal</span>
             <span>v1.0.0</span>
+            <button
+              onClick={() => setIsAdminOpen(true)}
+              className="text-gray-600 hover:text-neonPrimary hover:shadow-[0_0_10px_rgba(0,240,255,0.4)] transition-all cursor-pointer p-1 rounded border border-transparent hover:border-neonPrimary/30 bg-transparent flex items-center justify-center"
+              title="Admin Portal"
+            >
+              <Lock size={12} />
+            </button>
           </div>
+          
+          <AdminUploadModal isOpen={isAdminOpen} onClose={() => setIsAdminOpen(false)} />
         </div>
       </div>
     </footer>
