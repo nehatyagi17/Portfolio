@@ -81,8 +81,8 @@ const Hero = () => {
             <a href="#projects" className="px-8 py-3 rounded-full bg-neonPrimary/10 border border-neonPrimary text-neonPrimary hover:bg-neonPrimary hover:text-background transition-all duration-300 font-mono text-sm uppercase tracking-wider neon-border">
               Initialize Projects
             </a>
-            <a href="#contact" className="px-8 py-3 rounded-full bg-white/5 border border-white/20 text-white hover:bg-white/10 transition-all duration-300 font-mono text-sm uppercase tracking-wider">
-              Establish Uplink
+            <a href="/NehaTyagi.pdf" target="_blank" rel="noreferrer" className="px-8 py-3 rounded-full bg-white/5 border border-white/20 text-white hover:bg-white/10 transition-all duration-300 font-mono text-sm uppercase tracking-wider">
+              Resume
             </a>
           </motion.div>
         </motion.div>

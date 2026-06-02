@@ -18,7 +18,8 @@ const projects = [
     description: 'An advanced safety system featuring voice-trigger activation to instantly alert authorities and emergency contacts. Integrates real-time location tracking and audio streaming.',
     tags: ['React', 'Python', 'WebSockets', 'Geospatial'],
     icon: Shield,
-    color: 'neonSecondary'
+    color: 'neonSecondary',
+    github: 'https://github.com/nehatyagi17/Rakshak_App'
   },
   {
     id: 2,
@@ -45,7 +46,8 @@ const projects = [
     description: 'An offline-first, secure distribution system for public resources, utilizing hash-chained ledgers to prevent tampering and ensure transparency in supply chains.',
     tags: ['React', 'Node.js', 'Cryptography', 'Offline-First'],
     icon: Lock,
-    color: 'neonPrimary'
+    color: 'neonPrimary',
+    github: 'https://github.com/nehatyagi17/Secure_Rashan'
   }
 ];
 
@@ -73,7 +75,14 @@ const ProjectCard = ({ project, index }) => {
           <Icon size={28} />
         </div>
         <div className="flex gap-3">
-          <a href="#" className="text-gray-400 hover:text-white transition-colors"><GithubIcon size={20} /></a>
+          <a 
+            href={project.github || "#"} 
+            target={project.github ? "_blank" : "_self"} 
+            rel={project.github ? "noreferrer" : ""} 
+            className="text-gray-400 hover:text-white transition-colors"
+          >
+            <GithubIcon size={20} />
+          </a>
           <a href="#" className="text-gray-400 hover:text-white transition-colors"><ExternalLink size={20} /></a>
         </div>
       </div>

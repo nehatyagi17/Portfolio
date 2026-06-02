@@ -4,8 +4,8 @@ import AboutEducation from './components/AboutEducation';
 import SkillsCloud from './components/SkillsCloud';
 import ProjectGallery from './components/ProjectGallery';
 import ExperienceHackathons from './components/ExperienceHackathons';
-import WeeklyLearning from './components/WeeklyLearning';
-import MultimediaShowcase from './components/MultimediaShowcase';
+
+
 import ContactFooter from './components/ContactFooter';
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
             <a href="#education" className="hover:text-neonSecondary transition-colors">Core</a>
             <a href="#projects" className="hover:text-neonAccent transition-colors">Lab</a>
             <a href="#contact" className="hover:text-white transition-colors">Comm</a>
+            <a href="/NehaTyagi.pdf" target="_blank" rel="noreferrer" className="hover:text-neonPrimary transition-colors">Resume</a>
           </div>
         </div>
       </nav>
@@ -33,9 +34,9 @@ function App() {
         <AboutEducation />
         <SkillsCloud />
         <ProjectGallery />
-        <WeeklyLearning />
+
         <ExperienceHackathons />
-        <MultimediaShowcase />
+
       </main>
 
       <ContactFooter />

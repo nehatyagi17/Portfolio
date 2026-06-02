@@ -29,7 +29,6 @@ const ContactFooter = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-sm font-mono text-neonPrimary tracking-[0.3em] uppercase mb-2">Establish Uplink</h2>
             <h3 className="text-4xl font-display font-bold text-white mb-6">Let's <span className="text-transparent bg-clip-text bg-gradient-to-r from-neonPrimary to-neonAccent">Connect</span></h3>
             
             <p className="text-gray-400 mb-10 font-light leading-relaxed max-w-md mx-auto">
