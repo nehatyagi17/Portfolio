@@ -23,12 +23,13 @@ const projects = [
   },
   {
     id: 2,
-    title: 'TalentForge',
+    title: 'Smart-Hiring',
     subtitle: 'RAG-Based Hiring Intelligence Platform',
     description: 'A smart recruitment platform that uses Retrieval-Augmented Generation (RAG) and Vector Databases to match candidates with job descriptions accurately, featuring an AI HR agent.',
     tags: ['Next.js', 'LangChain', 'Vector DB', 'FastAPI'],
     icon: Brain,
-    color: 'neonPrimary'
+    color: 'neonPrimary',
+    github:'https://github.com/nehatyagi17/Smart_hiring'
   },
   {
     id: 3,
@@ -37,7 +38,8 @@ const projects = [
     description: 'A highly accurate sales forecasting system leveraging PySpark for big data processing and XGBoost for predictive modeling, designed for retail supply chain optimization.',
     tags: ['PySpark', 'XGBoost', 'Python', 'Data Engineering'],
     icon: TrendingUp,
-    color: 'neonAccent'
+    color: 'neonAccent',
+    github:'https://github.com/nehatyagi17/Blinkit_price_prediction'
   },
   {
     id: 4,
