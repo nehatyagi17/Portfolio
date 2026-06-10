@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Shield, Brain, TrendingUp, Lock, ExternalLink } from 'lucide-react';
+import { Shield, Brain, TrendingUp, GraduationCap, ExternalLink } from 'lucide-react';
 
 // ... (skipping to ProjectCard)
 
@@ -41,13 +41,14 @@ const projects = [
   },
   {
     id: 4,
-    title: 'RationGuard',
-    subtitle: 'Secure Distribution System',
-    description: 'An offline-first, secure distribution system for public resources, utilizing hash-chained ledgers to prevent tampering and ensure transparency in supply chains.',
-    tags: ['React', 'Node.js', 'Cryptography', 'Offline-First'],
-    icon: Lock,
+    title: 'Alumni Portal',
+    subtitle: 'Full-Stack Alumni Management Platform',
+    description: 'A comprehensive, full-stack alumni management system enabling educational institutions to manage verified alumni data, facilitate networking, and support real-time chat between students and alumni.',
+    tags: ['React', 'Node.js', 'PostgreSQL', 'WebSockets'],
+    icon: GraduationCap,
     color: 'neonPrimary',
-    github: 'https://github.com/nehatyagi17/Secure_Rashan'
+    github: 'https://github.com/AdityaRawat05/alumni-portal',
+    live: 'https://alumni-portal-five-lac.vercel.app/'
   }
 ];
 
@@ -75,15 +76,28 @@ const ProjectCard = ({ project, index }) => {
           <Icon size={28} />
         </div>
         <div className="flex gap-3">
-          <a 
-            href={project.github || "#"} 
-            target={project.github ? "_blank" : "_self"} 
-            rel={project.github ? "noreferrer" : ""} 
-            className="text-gray-400 hover:text-white transition-colors"
-          >
-            <GithubIcon size={20} />
-          </a>
-          <a href="#" className="text-gray-400 hover:text-white transition-colors"><ExternalLink size={20} /></a>
+          {project.github && (
+            <a 
+              href={project.github} 
+              target="_blank" 
+              rel="noreferrer" 
+              className="text-gray-400 hover:text-white transition-colors"
+              title="View GitHub Repository"
+            >
+              <GithubIcon size={20} />
+            </a>
+          )}
+          {project.live && (
+            <a 
+              href={project.live} 
+              target="_blank" 
+              rel="noreferrer" 
+              className="text-gray-400 hover:text-white transition-colors"
+              title="View Live Site"
+            >
+              <ExternalLink size={20} />
+            </a>
+          )}
         </div>
       </div>
 
